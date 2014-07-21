@@ -4,8 +4,12 @@
 <meta charset="UTF-8" />
 <title>Scooped Divs - Hole Punch Styles</title>
 <style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
 	div{
-		margin: 30px;
+		margin: 0 auto;
 		color: white;
 		font-size: 35px;
 	}
@@ -22,6 +26,7 @@
 		background: #58a;
 		background-image: radial-gradient(40px circle, white 99%, transparent);
 		background-position: 200px;
+		margin-bottom: 20px;
 	}
 	#tickettext{
 		text-align: center;
@@ -34,6 +39,7 @@
 			background: #58a;
 			background-image: radial-gradient(100px circle, white 99%, transparent);
 			background-position: 400px;
+			margin-bottom: 20px;
 	}
 	.centertext{
 		width: 60%;
@@ -45,27 +51,30 @@
 		width: 200px;
 		text-align: center;
 	}
-	
+	#wrapper{
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
 </style>
 </head>
 	<body>
-		
-	 	<div id="punched">
-	 		
-	 		<div class="centertext">Old photograph</div>
-	 	</div>
-
-		 	<div id="ticket">
+	<div id="wrapper">
+	 	 	<div id="ticket">
 		 		<p id="tickettext">Movie Ticket Style</p>
 		 	</div>
 
 			 	<div id="centerpunch">
 			 		<p class="centertext" id="centerhole">Center Punch</p>
 			 	</div>
-	
+
+				 	<div id="punched">
+		 				<div class="centertext">Old photograph</div>
+		 			</div>
+	</div> <!-- end wrapper -->
 	</body>
 </html>
 
 <!-- ******TO DO******
- --><!-- add borders shadow and text to two end punched one to make a css style movie ticket -->
-<!-- center text efficiently -->
+<!-- 4/21/2014 center text overlay -->
