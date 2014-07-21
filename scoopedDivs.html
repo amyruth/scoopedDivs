@@ -24,17 +24,10 @@
 		background-position: 200px;
 	}
 	#tickettext{
-		/*border-bottom: 5px solid white;
-		border-top: 5px solid white;*/
-		border: 5px double white;
-		margin-left: 45px;
+		text-align: center;
 		line-height: 300px;
-		padding: 100px 15px;
 	}
-	span{
-		line-height: 300px;
-		margin-left: 80px;
-	}
+	
 	#centerpunch{
 			width: 400px;
 			height: 300px;
@@ -42,21 +35,34 @@
 			background-image: radial-gradient(100px circle, white 99%, transparent);
 			background-position: 400px;
 	}
+	.centertext{
+		width: 60%;
+		line-height: 300px;
+		margin: auto;
+	}
+	#centerhole{
+		color: black;
+		width: 200px;
+		text-align: center;
+	}
+	
 </style>
 </head>
 	<body>
+		
 	 	<div id="punched">
 	 		
-	 		<span>Old photograph</span>
+	 		<div class="centertext">Old photograph</div>
 	 	</div>
 
-	 	<div id="ticket"><span id="tickettext">Movie Ticket Style</span></div>
-	 	<div id="centerpunch"></div>
-	 	<div></div>
-	 	<div></div>
-	 	<div></div>
-	 	<div></div>
-	 	<div></div>
+		 	<div id="ticket">
+		 		<p id="tickettext">Movie Ticket Style</p>
+		 	</div>
+
+			 	<div id="centerpunch">
+			 		<p class="centertext" id="centerhole">Center Punch</p>
+			 	</div>
+	
 	</body>
 </html>
 
